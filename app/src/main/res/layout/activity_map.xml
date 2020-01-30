@@ -4,26 +4,140 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#7400BCD4"
+    android:padding="16dp"
     tools:context=".MapActivity">
 
-    <Button
-        android:id="@+id/button"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Test"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@color/colorAccent"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/upButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Up" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/leftButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Left" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Test" />
+
+                <Button
+                    android:id="@+id/rightButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Right" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/downButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Down" />
+            </TableRow>
+
+        </TableLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        app:columnCount="3"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="3">
+
+        <ImageView
+            android:id="@+id/ivNW"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            app:srcCompat="@color/colorAccent" />
+
+        <ImageView
+            android:id="@+id/ivN"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            app:srcCompat="@color/colorAccent" />
+
+        <ImageView
+            android:id="@+id/ivNE"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            app:srcCompat="@color/colorAccent" />
+
+        <ImageView
+            android:id="@+id/ivW"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            app:srcCompat="@color/colorAccent" />
+
+        <ImageView
+            android:id="@+id/ivC"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            app:srcCompat="@color/colorAccent" />
+
+        <ImageView
+            android:id="@+id/ivE"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            app:srcCompat="@color/colorAccent" />
+
+        <ImageView
+            android:id="@+id/ivSW"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            app:srcCompat="@color/colorAccent" />
+
+        <ImageView
+            android:id="@+id/ivS"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            app:srcCompat="@color/colorAccent" />
+
+        <ImageView
+            android:id="@+id/ivSE"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            app:srcCompat="@color/colorAccent" />
+    </androidx.gridlayout.widget.GridLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
