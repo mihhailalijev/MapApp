@@ -20,7 +20,7 @@ class Requests {
 
     fun getBitmap(coordinates: Tile):Bitmap {
 
-        var result = myService.submit(Callable<Bitmap> {  requestCenteredMapImage(coordinates) })
+        var result = myService.submit(Callable<Bitmap> { requestCenteredMapImage(coordinates)})
         return result.get()
 
 //

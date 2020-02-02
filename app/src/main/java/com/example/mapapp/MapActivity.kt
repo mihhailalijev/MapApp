@@ -22,8 +22,6 @@ class MapActivity : AppCompatActivity() {
 
         debugButtons = listOf(upButton, rightButton, downButton, leftButton)
 
-        progressBar.setOnClickListener { displayMap() }
-
         for (button in debugButtons) {
             button.setOnClickListener {
 
