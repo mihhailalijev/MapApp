@@ -13,7 +13,7 @@ class Requests {
     private val cacheManager = CacheManager.MEMORY_LRU_CACHE
     private val logTag = "DEBUG"
 
-    private val myService: ExecutorService = Executors.newFixedThreadPool(2)
+    private val myService: ExecutorService = Executors.newFixedThreadPool(10)
     private val baseUrl = "https://d.tile.openstreetmap.de/"
 
     fun getBitmap(coordinates: Tile):Bitmap {
