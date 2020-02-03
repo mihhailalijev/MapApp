@@ -14,10 +14,10 @@ class Tiles {
         val TILES by lazy { Tiles() }
     }
 
+    private var requests = Requests()
+
     var centerTile : Tile = Tile(CENTER, 1164, 601)
     var tilesHashMap: HashMap<Tile, Bitmap?> = HashMap()
-
-    private var requests = Requests()
 
     private fun initTiles() {
         tilesHashMap[Tile(CENTER, 1164, 601)] = null
@@ -66,19 +66,9 @@ class Tiles {
     }
 
     private fun loadTiles() {
-
-
-
         for (tile in tilesHashMap.entries) {
-
-
             tile.setValue(requests.getBitmap(tile.key))
-
-
         }
-
-
-
     }
 
     fun moveTileCoordinateByXY(tile: Tile, increment_x: Boolean, increment_y: Boolean) {

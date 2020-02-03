@@ -14,7 +14,8 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout">
 
         <TableLayout
             android:id="@+id/tableLayout"
@@ -71,11 +72,10 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.gridlayout.widget.GridLayout
-        android:layout_width="450dp"
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="140dp"
         app:columnCount="3"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -83,56 +83,56 @@
 
         <ImageView
             android:id="@+id/ivNW"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
             app:srcCompat="@color/colorAccent" />
 
         <ImageView
             android:id="@+id/ivN"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
             app:srcCompat="@color/colorAccent" />
 
         <ImageView
             android:id="@+id/ivNE"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
             app:srcCompat="@color/colorAccent" />
 
         <ImageView
             android:id="@+id/ivW"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
             app:srcCompat="@color/colorAccent" />
 
         <ImageView
             android:id="@+id/ivC"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
             app:srcCompat="@color/colorAccent" />
 
         <ImageView
             android:id="@+id/ivE"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
             app:srcCompat="@color/colorAccent" />
 
         <ImageView
             android:id="@+id/ivSW"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
             app:srcCompat="@color/colorAccent" />
 
         <ImageView
             android:id="@+id/ivS"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
             app:srcCompat="@color/colorAccent" />
 
         <ImageView
             android:id="@+id/ivSE"
-            android:layout_width="160dp"
-            android:layout_height="160dp"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
             app:srcCompat="@color/colorAccent" />
     </androidx.gridlayout.widget.GridLayout>
 

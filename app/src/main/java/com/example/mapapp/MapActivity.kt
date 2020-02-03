@@ -22,8 +22,14 @@ class MapActivity : AppCompatActivity() {
 
         debugButtons = listOf(upButton, rightButton, downButton, leftButton)
 
+
         for (button in debugButtons) {
             button.setOnClickListener {
+
+                ivC.invalidate()
+                ivE.invalidate()
+                ivW.invalidate()
+                ivN.invalidate()
 
                 Thread({
                     when (button.id) {
